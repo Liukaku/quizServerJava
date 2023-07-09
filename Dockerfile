@@ -1,7 +1,7 @@
 FROM gradle:latest AS BUILD
 WORKDIR /usr/app/
 COPY . .
-RUN gradle build
+RUN gradlew build
 RUN echo $(ls)
 
 #FROM eclipse-temurin:17-jdk-alpine
