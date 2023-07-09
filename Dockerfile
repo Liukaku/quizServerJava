@@ -4,7 +4,7 @@ COPY . .
 RUN gradle build
 RUN echo $(ls)
 
-#FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:17-jdk-alpine
 ARG JAR_FILE=target/*.jar
 RUN touch .env
 RUN echo $(ls)
