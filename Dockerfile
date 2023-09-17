@@ -12,6 +12,5 @@ RUN touch .env
 COPY build/libs/*.jar /app/
 RUN echo $(ls)
 RUN echo $(pwd)
-ENTRYPOINT ["java","-jar","app.jar"]
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","/app/app.jar"]
 EXPOSE 8080
