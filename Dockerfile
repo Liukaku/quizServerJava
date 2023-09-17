@@ -11,5 +11,5 @@ ARG JAR_FILE=target/*.jar
 RUN touch .env
 COPY build/libs/*.jar app.jar
 RUN echo $(ls)
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app/"]
 EXPOSE 8080
