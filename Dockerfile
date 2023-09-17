@@ -12,7 +12,7 @@ RUN touch .env
 COPY build/libs/*.jar /app/
 RUN echo $(ls)
 RUN echo $(pwd)
-RUN cd /app
+RUN cd /app/
 RUN echo $(ls)
 RUN echo $(pwd)
 ENTRYPOINT ["java","-jar","/app/app.jar"]
